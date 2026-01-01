@@ -101,33 +101,35 @@ const Hero = () => {
 
                   </div>
                   {/* third div section */}
-
-                  <motion.div
-                    initial={{opacity:0, y: 100}}
-                      animate={{opacity:1, y: 0}}
-                      transition={{
-                        type: 'spring', 
-                        stiffness: 100,
-                        damping: 10,
-                        delay: 1.2,
-                      }}
-                  className="text-lightOrange mt-[100px] md:mt-30 p-4 space-y-28">
-                    <h2 className="opacity-0 text-5xl font-bold leading-tight ml-10">
-                      Thilani Watch Center
-                    </h2>
-                    <div className="relative">
-                      <div className="relative z-10 space-y-4">
-                        <h3 className="text-2xl">
-                          Elegance in Every Second
-                        </h3>
-                        <p className="text-sm opacity-55 leading-loose">
-                          Designed with precision and elegance, our watches bring together style, 
-                          comfort, and reliability. Perfect for those who value time as much as design
-                        </p>
+                  <div className="hidden lg:block">
+                    <motion.div
+                      initial={{opacity:0, y: 100}}
+                        animate={{opacity:1, y: 0}}
+                        transition={{
+                          type: 'spring', 
+                          stiffness: 100,
+                          damping: 10,
+                          delay: 1.2,
+                        }}
+                      className="text-lightOrange mt-[100px] md:mt-30 p-4 space-y-28">
+                      <h2 className="opacity-0 text-5xl font-bold leading-tight ml-10">
+                        Thilani Watch Center
+                      </h2>
+                      <div className="relative">
+                        <div className="relative z-10 space-y-4">
+                          <h3 className="text-2xl">
+                            Elegance in Every Second
+                          </h3>
+                          <p className="text-sm opacity-55 leading-loose">
+                            Designed with precision and elegance, our watches bring together style, 
+                            comfort, and reliability. Perfect for those who value time as much as design
+                          </p>
+                        </div>
+                        <div className="absolute -top-6 -left-8 w-[400px] h-[190px] bg-gray-700/25"></div>
                       </div>
-                      <div className="absolute -top-6 -left-8 w-[400px] h-[190px] bg-gray-700/25"></div>
-                    </div>
                   </motion.div>
+                  </div>
+                  
                 </div>
             </div>
 
@@ -137,8 +139,8 @@ const Hero = () => {
                 <motion.div
                   initial={{x: "100%"}}
                   whileInView={{ x:0}}
-                  className="absolute top-0 right-0 w-[140px] h-[550px] bg-gradient-to-b from-primary/80 to-primaryDark/80 backdrop-blur-sm z-10">
-                  <div className="w-full h-[500px] flex justify-center items-center">
+                  className="absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b from-primary/80 to-primaryDark/80 backdrop-blur-sm z-50">
+                  <div className="w-full h-[650px] flex justify-center items-center">
                     <div className="flex flex-col justify-center items-center gap-6 text-white">
                       {/* line */}
                       <div className="w-[1px] h-[70px] bg-white"></div>

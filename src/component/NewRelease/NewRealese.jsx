@@ -42,9 +42,9 @@ const NewRelease = () => {
         centeredSlides={true}
         slidesPerView="auto"
         loop={true}
-        speed={800}
+        speed={700}
         autoplay={{
-          delay: 4000,
+          delay: 2600,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
